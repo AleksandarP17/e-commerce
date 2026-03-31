@@ -1,0 +1,394 @@
+/* CONTENT */
+
+main {
+    margin: 0 auto;
+    width: 95%;
+}
+
+.content {
+    padding: 0 5%;
+}
+
+.view-toggle {
+    display: none;
+}
+
+.side-bar>* {
+    display: none;
+}
+
+.side-bar>h2 {
+    display: inline-block;
+    border: 1px solid #333;
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 4px;
+    font-weight: normal;
+    margin-left: 0.7rem;
+    width: 60px;
+    text-align: center;
+}
+
+.side-bar {
+    display: block;
+    float: left;
+}
+
+@media screen and (min-width: 1025px) {
+
+    .content {
+        padding: 0;
+    }
+
+    .side-bar>h2 {
+        display: block;
+        border: none;
+        margin: 24px 0;
+        font-size: 1.4rem;
+    }
+
+    .side-bar>* {
+        display: block;
+    }
+
+    .filter-checkbox>label {
+        display: block;
+    }
+
+    .right-arrow {
+        font-size: 1.4rem;
+    }
+
+    .down-arrow {
+        font-size: 1rem;
+        vertical-align: middle;
+    }
+
+    .filter-checkbox input[type="checkbox"] {
+        accent-color: #333;
+        width: 1rem;
+        height: 1rem;
+        margin-right: 4px;
+    }
+
+    .side-bar {
+        width: 18vw;
+        max-width: 350px;
+        border: 1px solid #b3aeab;
+        border-radius: 16px;
+        padding: 20px 16px;
+        float: left;
+        margin: 10px;
+    }
+
+    .side-bar span {
+        margin: 20px auto;
+        font-size: 1.2rem;
+    }
+
+    .colors,
+    .other {
+        margin: 20px auto;
+    }
+
+    .filter-checkbox {
+        margin: 0 auto;
+        width: 15rem;
+    }
+
+    .filter-checkbox label {
+        font-size: 1.2rem;
+        margin: 10px 0;
+    }
+
+    .apply-filters {
+        display: block;
+        margin: 0 auto;
+        margin-top: 70px;
+        width: 90%;
+        height: auto;
+    }
+
+    .side-bar>button {
+        color: #fff;
+        background: #000;
+        min-height: 40px;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+
+    .side-bar>button:hover {
+        background: #333;
+    }
+}
+
+.content-header {
+    display: block;
+    float: right;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.content-header select {
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 4px;
+    margin: 0.8rem 0.7rem;
+    width: 76px;
+}
+
+.content-header>.left {
+    display: none;
+}
+
+
+@media screen and (min-width: 1025px) {
+    .view-toggle {
+        margin: 10px auto;
+        float: right;
+        display: inline;
+        width: 100%;
+        text-align: end;
+    }
+
+    .view-toggle>span {
+        color: #b3aeab;
+        font-size: 1.4rem;
+    }
+
+    .view-toggle>.active {
+        color: #333;
+    }
+
+    .content-right {
+        width: 70vw;
+        float: right;
+        margin: 10px auto;
+    }
+
+    .content-header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .content-header>span {
+        color: #b3aeab;
+        padding: 4px;
+    }
+
+    .content-header .left {
+        display: block;
+    }
+
+    .right>select {
+        color: #333;
+        border: 1px solid #b3aeab;
+        border-radius: 8px;
+        padding: 4px;
+        width: 7vw;
+        margin: 0;
+        min-width: 76px;
+    }
+}
+
+/* PRODUCT CARDS */
+
+.product-cards {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #b3aeab;
+    clear: both;
+}
+
+.product-card {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #8c6a3b;
+    border-radius: 8px;
+    margin: 1rem auto;
+    position: relative;
+}
+
+.sale-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.product-card .sale-badge {
+    width: 25%;
+}
+
+.product-card>img {
+    width: 100%;
+}
+
+.product-card>img,
+.product-card>span,
+.product-card>button {
+    display: block;
+}
+
+.product-name {
+    margin: 16px auto;
+    font-size: 1rem;
+}
+
+.product-card>.price {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.product-card>button {
+    border: 1px solid #3a2a22;
+    background: #fff;
+    color: #3a2a22;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 32px;
+    width: 80%;
+    padding: 8px 24px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.product-card>button>.material-icons {
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.product-card>button:hover {
+    background-color: #8c6a3b;
+    color: #fff;
+}
+
+.discount {
+    border: 2px solid red;
+    border-radius: 8px;
+    color: red;
+    padding: 2px 4px;
+}
+
+.discount-product-header {
+    margin: 16px auto;
+    vertical-align: middle;
+}
+
+.discount-product-price {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #b3aeab;
+    font-weight: normal;
+}
+
+@media screen and (min-width: 768px){
+    .product-cards {
+        text-align: center;
+    }
+
+    .product-card {
+        display: inline-block;
+        width: 30%;
+        height: auto;
+        margin: 8px;
+        text-align: left;
+        vertical-align: top;
+        min-width: 200px;
+    }
+
+    .discount {
+        padding: 0 2px;
+        font-size: 0.8rem;
+    }
+
+    .product-card>button {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+
+    .product-cards {
+        text-align: center;
+    }
+
+    .product-card {
+        display: inline-block;
+        width: 23%;
+        vertical-align: top;
+        margin: 8px;
+        min-width: 220px;
+        height: auto;
+        text-align: left;
+    }
+}
+
+.page-number {
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.big-button {
+    border: 1px solid #b3aeab;
+    padding: 4px 18px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    background-color: #fff;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.small-button {
+    margin: 0 2px;
+    border: 1px solid #b3aeab;
+    padding: 4px 6px;
+    border-radius: 8px;
+    font-size: 0.6rem;
+    background-color: #fff;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.small-button.active {
+    color: #fff;
+    background: #000;
+}
+
+.small-button:hover,
+.big-button:hover {
+    color: white;
+    background: #b3aeab;
+}
+
+@media screen and (min-width: 768px) {
+    .big-button {
+        font-size: 1rem;
+        padding: 6px 24px;
+    }
+
+    .small-button {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+
+    .big-button {
+        font-size: 1.2rem;
+        padding: 6px 24px;
+    }
+
+    .small-button {
+        font-size: 1rem;
+        padding: 6px 12px;
+    }
+}

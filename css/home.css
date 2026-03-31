@@ -1,0 +1,254 @@
+/* CONTENT */
+
+.hero {
+    width: 100%;
+    aspect-ratio: 9 / 5;
+    background-image: url("../Images/hero-900.jpg");
+    background-size: cover;
+    background-position: right center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    width: 70%;
+    text-align: center;
+}
+
+.hero-content h1 {
+    margin: 0;
+    color: #3a2a22;
+    font-size: 2rem;
+}
+
+.hero-content span {
+    color: #8c6a3b;
+}
+
+.hero-btn {
+    border: 1.5px solid #8c6a3b;
+    background-color: transparent;
+    color: #8c6a3b;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: bolder;
+}
+
+.hero-btn:hover {
+    border: 1.5px solid #3a2a22;
+    color: #3a2a22;
+}
+
+@media screen and (min-width: 768px) {
+
+    .hero {
+        background-image: url("../Images/hero-1500.jpg");
+        aspect-ratio: 1920 / 769;
+    }
+
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-btn {
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .hero {
+        background-image: url("../Images/hero-1920.jpg");
+    }
+
+    .hero-content h1 {
+        font-size: 4.5rem;
+    }
+}
+
+.content {
+    margin-top: 2rem;
+}
+
+.featured-title {
+    text-align: center;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .featured-title {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .featured-title {
+        font-size: 1.4rem;
+    }
+}
+
+.featured-products {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    display: block;
+    width: 45%;
+    padding: 8px;
+    border: 1px solid #8c6a3b;
+    border-radius: 8px;
+    margin: 0.5rem auto;
+    position: relative;
+}
+
+.sale-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.product-card .sale-badge {
+    width: 25%;
+}
+
+.product-card>img {
+    width: 100%;
+}
+
+.product-card>img,
+.product-card>span,
+.product-card>button {
+    display: block;
+}
+
+.product-name {
+    margin: 1rem 0;
+    font-size: 1rem;
+    line-height: 1.2;
+    min-height: calc(1.2em * 2);
+}
+
+.product-card>.price {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.product-card>button {
+    border: 1px solid #3a2a22;
+    background: #fff;
+    color: #3a2a22;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 90%;
+    padding: 4px 8px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.product-card>button>.material-icons {
+    vertical-align: middle;
+}
+
+.product-card>button:hover {
+    background-color: #8c6a3b;
+    color: #fff;
+}
+
+.discount {
+    border: 2px solid red;
+    border-radius: 8px;
+    color: red;
+    padding: 2px;
+}
+
+.discount-product-header {
+    margin: 1rem auto;
+    vertical-align: middle;
+    line-height: 1.2;
+    min-height: calc(1.2em * 2);
+}
+
+.discount-product-price {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #b3aeab;
+    font-weight: normal;
+}
+
+.view-all {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.view-all button {
+    border: 1.5px solid #8c6a3b;
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.view-all button a {
+    color: #8c6a3b;
+    font-weight: bolder;
+}
+
+.view-all button:hover {
+    border: 1.5px solid #3a2a22;
+    color: #3a2a22;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .featured-products {
+        width: 100%;
+    }
+
+    .product-card {
+        display: block;
+        width: 23%;
+        padding: 8px;
+        border: 1px solid #8c6a3b;
+        border-radius: 8px;
+        margin: 0.5rem 5px;
+        position: relative;
+    }
+
+    .view-all button {
+        padding: 1rem 1.5rem;
+        margin: 1rem 0;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .product-name {
+        font-size: 1.1rem;
+    }
+
+    .product-card>.price {
+        font-size: 1.4rem;
+    }
+
+    .discount-product-price {
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+}

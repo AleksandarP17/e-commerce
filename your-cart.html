@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/your-cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>Your Cart</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product-page.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger fw-bold" href="#">Sale!</a>
+                        </li>
+                    </ul>
+                    <form class="search d-none d-lg-flex">
+                        <input class="form-control me-5" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                    <div class="actions d-none d-lg-flex align-items-center">
+                        <a href="your-cart.html"><span class="material-icons">shopping_cart</span></a>
+                        <a href="login.html"><span class="material-icons">account_circle</span></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="breadcrumbs">
+            <ol class="breadcrumb m-3">
+                <span class="breadcrumb-item cursor-pointer"><a href="index.html"
+                        class="text-decoration-none text-secondary">Home</a></span>
+                <span class="breadcrumb-item cursor-pointer"><a href="your-cart.html"
+                        class="text-decoration-none breadcrumb-active">Your Cart</a></span>
+            </ol>
+        </div>
+        <h2 class="text-center">Your Cart</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 mx-auto">
+                    <div class="cart mt-3">
+                        <div class="cart-item">
+                            <div class="product-image">
+                                <img src="images/blazer-600.jpg" alt="blazer">
+                            </div>
+                            <div class="product-info">
+                                <div class="info-header">
+                                    <span class="product-name">Blazer</span>
+                                    <span class="price">$95</span>
+                                </div>
+                                <div class="product-size"><span>Size: S</span></div>
+                                <div class="amount"><span class="minus">-</span><span class="center">1</span><span
+                                        class="plus">+</span></div>
+                            </div>
+                        </div>
+                        <div class="cart-item">
+                            <div class="product-image">
+                                <img src="images/sweater-600.jpg" alt="seater">
+                            </div>
+                            <div class="product-info">
+                                <div class="info-header">
+                                    <span class="product-name">Chunky Knit Sweater</span>
+                                    <span class="price">$55</span>
+                                </div>
+                                <div class="product-size">Size: M</div>
+                                <div class="amount"><span class="minus">-</span><span class="center">1</span><span
+                                        class="plus">+</span></div>
+                            </div>
+                        </div>
+                        <div class="cart-item">
+                            <div class="product-image">
+                                <img src="images/blouse-600.jpg" alt="bluse">
+                            </div>
+                            <div class="product-info">
+                                <div class="info-header">
+                                    <span class="product-name">Mesh Sleeve Bluse</span>
+                                    <span class="price">$32</span>
+                                </div>
+                                <div class="product-size">Size: S</div>
+                                <div class="amount"><span class="minus">-</span><span class="center">1</span><span
+                                        class="plus">+</span></div>
+                            </div>
+                        </div>
+                        <div class="cart-item last-item">
+                            <div class="product-image">
+                                <img src="images/retro-jeans-600.jpg" alt="jeans">
+                            </div>
+                            <div class="product-info">
+                                <div class="info-header">
+                                    <span class="product-name">Retro Jeans</span>
+                                    <div class="price">
+                                        <span class="old-price">$77</span>
+                                        <span class="price">$70</span>
+                                    </div>
+                                </div>
+                                <div class="product-size">Size: S</div>
+                                <div class="amount"><span class="minus">-</span><span class="center">1</span><span
+                                        class="plus">+</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mx-auto my-4">
+                    <div class="total-price">
+                        <h5 class="text-start fw-bold">Order Summary</h5>
+                        <div class="subtotal d-flex justify-content-between mt-4">
+                            <span>Subtotal</span>
+                            <span class="fw-bold">$252</span>
+                        </div>
+                        <div class="discount d-flex justify-content-between mt-2">
+                            <span>Discount</span>
+                            <span class="fw-bold">$0</span>
+                        </div>
+                        <div class="total d-flex justify-content-between mt-2 fw-bold fs-5">
+                            <span>Total</span>
+                            <span>$252</span>
+                        </div>
+                        <form action="#" method="post" class="coupon mt-4">
+                            <div class="row">
+                                <div class="col-8">
+                                    <input type="text" class="form-control form-control-lg border-dark rounded-3"
+                                        name="coupon" id="promo-input" placeholder="Add promo code">
+                                </div>
+                                <div class="col-4">
+                                    <button type="button" onclick="validateAndNotify()" class="btn btn-lg btn-dark w-100 rounded-3 fw-light">Apply</button>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <button type="button" class="btn btn-lg btn-dark w-100 rounded-3 fw-light">Go to Checkout</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="purchase-info small mt-5">
+                        <p>Prices and costs are not displayed until you complete your purchase.</p>
+                        <p>You have 30 days to change your mind. <a href="#">Read more about Delivery and Return.</a>
+                        </p>
+                        <p>Need help? Please contact <a href="#">Customer Support</a>.</p>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <div class="newsletter">
+        <div class="newsletter-left">
+            <h1>Stay up to date about our best offers!</h1>
+        </div>
+        <div class="newsletter-right">
+            <input type="text" name="email" id="email" placeholder="Enter your email adress...">
+            <button>Subscribe to Newsletter</button>
+        </div>
+    </div>
+    <footer class="mt-5">
+        <div class="container d-lg-none">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <a href="#" class="text-decoration-none text-dark">Shop</a>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-decoration-none text-dark">Dresses</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">Jackets</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">Skirts</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">Shoes &amp; Bags</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">Gift Cards</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">Sales &amp; Offers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <a href="#" class="text-decoration-none text-dark">Information</a>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-decoration-none text-dark">About</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">Terms and Conditions</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">Privacy Policy</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">Delivery and Return</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            <a href="#" class="text-decoration-none text-dark">Customer Support</a>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-decoration-none text-dark">Contact</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">Help</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid d-none d-lg-block">
+            <div class="row justify-content-center">
+                <div class="col-3">
+                    <h5 class="mb-3">Shop</h5>
+                    <ul class="list-unstyled mb-0 lh-lg">
+                        <li><a href="#" class="text-decoration-none text-secondary">Dresses</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Jackets</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Skirts</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Shoes &amp; Bags</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Gift Cards</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Sales &amp; Offers</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h5 class="mb-3">Information</h5>
+                    <ul class="list-unstyled mb-0 lh-lg">
+                        <li><a href="#" class="text-decoration-none text-secondary">About</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Terms and Conditions</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Privacy Policy</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Delivery and Return</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h5 class="mb-3">Customer Support</h5>
+                    <ul class="list-unstyled mb-0 lh-lg">
+                        <li><a href="#" class="text-decoration-none text-secondary">Contact</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Help</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-4 border-top border-dark">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between align-items-center">
+                    <div class="author">
+                        <span class="footer-text">Designed and Developed by: <span class="fw-bold d-block">Aleksandar S.
+                                Perošević</span></span>
+                    </div>
+                    <div class="social-media">
+                        <img src="images/facebook.png" alt="facebook">
+                        <img src="images/instagram.png" alt="instagram">
+                        <img src="images/tik-tok.png" alt="tiktok">
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/your-cart.js"></script>
+</body>
+
+</html>

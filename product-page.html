@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>Product Page</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product-page.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger fw-bold" href="#">Sale!</a>
+                        </li>
+                    </ul>
+                    <form class="search d-none d-lg-flex">
+                        <input class="form-control me-5" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                    <div class="actions d-none d-lg-flex align-items-center">
+                        <a onclick="openCart()" href="your-cart.html"><span class="material-icons">shopping_cart</span></a>
+                        <a href="login.html"><span class="material-icons">account_circle</span></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="breadcrumbs">
+            <ol class="breadcrumb m-3">
+                <span class="breadcrumb-item cursor-pointer"><a href="index.html" class="text-decoration-none text-secondary">Home</a></span>
+                <span class="breadcrumb-item cursor-pointer"><a href="product-page.html" class="text-decoration-none breadcrumb-active">Shop</a></span>
+            </ol>
+        </div>
+        <h1 class="page-title">View All Products</h1>
+        <div class="content">
+            <div class="view-toggle">
+                <span class="material-icons">crop_square</span>
+                <span class="material-icons">table_rows</span>
+                <span class="material-icons active">grid_on</span>
+            </div>
+            <div class="side-bar">
+                <h2>Filters</h2>
+                <div class="price">
+                    <span>Price</span>
+                    <span class="right-arrow">›</span>
+                </div>
+                <div class="brand">
+                    <span>Brand</span>
+                    <span class="material-icons down-arrow">keyboard_arrow_down</span>
+                    <div class="filter-checkbox">
+                        <label><input type="checkbox"> Zara</label>
+                        <label><input type="checkbox"> H&amp;M</label>
+                        <label><input type="checkbox"> BERSHKA</label>
+                        <label><input type="checkbox"> KOTON</label>
+                        <label><input type="checkbox">All Brands</label>
+                    </div>
+                </div>
+                <div class="category">
+                    <span>Categories</span>
+                    <span class="material-icons down-arrow">keyboard_arrow_down</span>
+                    <div class="filter-checkbox">
+                        <label><input type="checkbox">Fleece</label>
+                        <label><input type="checkbox">Sweaters</label>
+                        <label><input type="checkbox">Shirts</label>
+                        <label><input type="checkbox">T-Shirts</label>
+                        <label><input type="checkbox">All Items</label>
+                    </div>
+                </div>
+                <div class="collection">
+                    <span>Collection</span>
+                    <span class="material-icons down-arrow">keyboard_arrow_down</span>
+                    <div class="filter-checkbox">
+                        <label><input type="checkbox">Spring/Summer</label>
+                        <label><input type="checkbox">Autumn/Winter</label>
+                        <label><input type="checkbox">All Collections</label>
+                    </div>
+                </div>
+                <div class="colors">
+                    <span>Colors</span>
+                    <span class="right-arrow">›</span>
+                </div>
+                <div class="other">
+                    <span>Other</span>
+                    <span class="right-arrow">›</span>
+                </div>
+                <button class="apply-filters">Apply Filters</button>
+            </div>
+            <div class="content-right">
+                <div class="content-header">
+                    <span class="left">Showing 13-24 of 312 Products</span>
+                    <span class="right">
+                        <select name="sort-by" id="sort.by">
+                            <option value="" disabled selected>Sort By</option>
+                            <option value="most-popular">Most Popular</option>
+                            <option value="price">Price</option>
+                            <option value="name">Name A-Z</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="product-cards">
+                    <div class="product-card">
+                        <img src="images/blazer-600.jpg" 
+                        srcset="
+                        images/blazer-360.jpg 360w,
+                        images/blazer-600.jpg 600w,
+                        images/blazer-740.jpg  740w
+                        " 
+                        sizes="
+                        (max-width: 767px) 100vw,
+                        (max-width: 1023px) 33vw,
+                        25vw
+                        " 
+                        alt="Blazer">
+                        <span class="product-name">Blazer</span>
+                        <span class="price">$95</span>
+                        <button onclick="dodajNaIznos(95)"><span class="material-icons">shopping_cart</span>Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/a-trousers-600.jpg"
+                        srcset="
+                        images/a-trousers-360.jpg 360w,
+                        images/a-trousers-600.jpg 600w,
+                        images/a-trousers-740.jpg  740w
+                        " 
+                        sizes="
+                        (max-width: 767px) 100vw,
+                        (max-width: 1023px) 33vw,
+                        25vw
+                        " 
+                         alt="Trousers">
+                        <span class="product-name">Elegant A-line trousers</span>
+                        <span class="price">$72</span>
+                        <button onclick="dodajNaIznos(72)"><span class="material-icons">shopping_cart</span>Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/midi-coat-600.jpg"
+                        srcset="
+                        images/midi-coat-360.jpg 360w,
+                        images/midi-coat-600.jpg 600w,
+                        images/midi-coat-740.jpg  740w
+                        " 
+                        sizes="
+                        (max-width: 767px) 100vw,
+                        (max-width: 1023px) 33vw,
+                        25vw
+                        " 
+                        alt="Midi Coat">
+                        <span class="product-name">Midi Coat</span>
+                        <span class="price">$105</span>
+                        <button onclick="dodajNaIznos(105)"><span class="material-icons">shopping_cart</span>Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/wool-blazer-600.jpg"
+                        srcset="
+                        images/wool-blazer-360.jpg 360w,
+                        images/wool-blazer-600.jpg 600w,
+                        images/wool-blazer-740.jpg  740w
+                        " 
+                        sizes="
+                        (max-width: 767px) 100vw,
+                        (max-width: 1023px) 33vw,
+                        25vw
+                        " 
+                        alt="Wool Blazer">
+                        <img src="images/sale.png" alt="sale-badge" class="sale-badge">
+                        <div class="discount-product-header">
+                            <span class="product-name">Wool Blazer</span>
+                            <span class="discount">-10%</span>
+                        </div>
+                        <div class="discount-product-price">
+                            <span class="price">$50</span>
+                            <span class="old-price">$55</span>
+                        </div>
+                        <button onclick="dodajNaIznos(50)"><span class="material-icons">shopping_cart</span>Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/retro-jeans-600.jpg"
+                        srcset="
+                        images/retro-jeans-360.jpg 360w,
+                        images/retro-jeans-600.jpg 600w,
+                        images/retro-jeans-740.jpg  740w
+                        "
+                        sizes="
+                        (max-width: 767px) 100vw,
+                        (max-width: 1023px) 33vw,
+                        25vw
+                        " 
+                        alt="Retro Jeans">
+                        <img src="images/sale.png" alt="sale-badge" class="sale-badge">
+                        <div class="discount-product-header">
+                            <span class="product-name">Retro Jeans</span>
+                            <span class="discount">-10%</span>
+                        </div>
+                        <div class="discount-product-price">
+                            <span class="price">$70</span>
+                            <span class="old-price">$77</span>
+                        </div>
+                        <button onclick="dodajNaIznos(70)"><span class="material-icons">shopping_cart</span>Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/belted-coat-600.jpg"
+                        srcset="
+                        images/belted-coat-360.jpg 360w,
+                        images/belted-coat-600.jpg 600w,
+                        images/belted-coat-740.jpg  740w
+                        " 
+                        sizes="
+                        (max-width: 767px) 100vw,
+                        (max-width: 1023px) 33vw,
+                        25vw
+                        " 
+                        alt="Belted Coat">
+                        <span class="product-name">Belted Coat</span>
+                        <span class="price">$95</span>
+                        <button onclick="dodajNaIznos(95)"><span class="material-icons">shopping_cart</span>Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/sweater-600.jpg"
+                        srcset="
+                        images/sweater-360.jpg 360w,
+                        images/sweater-600.jpg 600w,
+                        images/sweater-740.jpg  740w
+                        " 
+                        sizes="
+                        (max-width: 767px) 100vw,
+                        (max-width: 1023px) 33vw,
+                        25vw
+                        " 
+                        alt="Chunky Knit Sweater">
+                        <span class="product-name">Chunky Knit Sweater</span>
+                        <span class="price">$55</span>
+                        <button onclick="dodajNaIznos(55)"><span class="material-icons">shopping_cart</span>Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/denim-shirt-600.jpg"
+                        srcset="
+                        images/denim-shirt-360.jpg 360w,
+                        images/denim-shirt-600.jpg 600w,
+                        images/denim-shirt-740.jpg  740w
+                        " 
+                        sizes="
+                        (max-width: 767px) 100vw,
+                        (max-width: 1023px) 33vw,
+                        25vw
+                        "  
+                        alt="Denim Shirt">
+                        <span class="product-name">Denim Shirt</span>
+                        <span class="price">$34</span>
+                        <button onclick="dodajNaIznos(34)"><span class="material-icons">shopping_cart</span>Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/elegant-trousers-600.jpg"
+                        srcset="
+                        images/elegant-trousers-360.jpg 360w,
+                        images/elegant-trousers-600.jpg 600w,
+                        images/elegant-trousers-740.jpg  740w
+                        " 
+                        sizes="
+                        (max-width: 767px) 100vw,
+                        (max-width: 1023px) 33vw,
+                        25vw
+                        " 
+                        alt="Elegant Trousers">
+                        <span class="product-name">Elegant Trousers</span>
+                        <span class="price">$28</span>
+                        <button onclick="dodajNaIznos(28)"><span class="material-icons">shopping_cart</span>Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/high-trousers-600.jpg"
+                        srcset="
+                        images/high-trousers-360.jpg 360w,
+                        images/high-trousers-600.jpg 600w,
+                        images/high-trousers-740.jpg  740w
+                        " 
+                        sizes="
+                        (max-width: 767px) 100vw,
+                        (max-width: 1023px) 33vw,
+                        25vw
+                        " 
+                        alt="High-Waist Trousers">
+                        <span class="product-name">High-Waist Trousers</span>
+                        <span class="price">$30</span>
+                        <button onclick="dodajNaIznos(30)"><span class="material-icons">shopping_cart</span>Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/blouse-600.jpg"
+                        srcset="
+                        images/blouse-360.jpg 360w,
+                        images/blouse-600.jpg 600w,
+                        images/blouse-740.jpg  740w
+                        " 
+                        sizes="
+                        (max-width: 767px) 100vw,
+                        (max-width: 1023px) 33vw,
+                        25vw
+                        " 
+                        alt="Mesh Sleeve Blouse">
+                        <span class="product-name">Mesh Sleeve Blouse</span>
+                        <span class="price">$32</span>
+                        <button onclick="dodajNaIznos(32)"><span class="material-icons">shopping_cart</span>Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/vest-600.jpg"
+                        srcset="
+                        images/vest-360.jpg 360w,
+                        images/vest-600.jpg 600w,
+                        images/vest-740.jpg  740w
+                        " 
+                        sizes="
+                        (max-width: 767px) 100vw,
+                        (max-width: 1023px) 33vw,
+                        25vw
+                        " 
+                        alt="Knit Sweater Vest">
+                        <img src="images/sale.png" alt="sale-badge" class="sale-badge">
+                        <div class="discount-product-header">
+                            <span class="product-name">Knit Sweater Vest</span>
+                            <span class="discount">-10%</span>
+                        </div>
+                        <div class="discount-product-price">
+                            <span class="price">$60</span>
+                            <span class="old-price">$66</span>
+                        </div>
+                        <button type="button" onclick="dodajNaIznos(60)"><span class="material-icons">shopping_cart</span>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="page-number">
+                    <button class="big-button">Back</button>
+                    <button class="small-button">1</button>
+                    <button class="small-button active">2</button>
+                    <button class="small-button">...</button>
+                    <button class="small-button">9</button>
+                    <button class="small-button">10</button>
+                    <button class="big-button">Next</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="newsletter">
+        <div class="newsletter-left">
+            <h1>Stay up to date about our best offers!</h1>
+        </div>
+        <div class="newsletter-right">
+            <input type="text" name="email" id="email" placeholder="Enter your email adress...">
+            <button>Subscribe to Newsletter</button>
+        </div>
+    </div>
+    <footer class="mt-5">
+        <div class="container d-lg-none">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <a href="#" class="text-decoration-none text-dark">Shop</a>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-decoration-none text-dark">Dresses</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">Jackets</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">Skirts</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">Shoes &amp; Bags</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">Gift Cards</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">Sales &amp; Offers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <a href="#" class="text-decoration-none text-dark">Information</a>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-decoration-none text-dark">About</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">Terms and Conditions</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">Privacy Policy</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">Delivery and Return</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            <a href="#" class="text-decoration-none text-dark">Customer Support</a>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-decoration-none text-dark">Contact</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">Help</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid d-none d-lg-block">
+            <div class="row justify-content-center">
+                <div class="col-3">
+                    <h5 class="mb-3">Shop</h5>
+                    <ul class="list-unstyled mb-0 lh-lg">
+                        <li><a href="#" class="text-decoration-none text-secondary">Dresses</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Jackets</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Skirts</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Shoes &amp; Bags</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Gift Cards</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Sales &amp; Offers</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h5 class="mb-3">Information</h5>
+                    <ul class="list-unstyled mb-0 lh-lg">
+                        <li><a href="#" class="text-decoration-none text-secondary">About</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Terms and Conditions</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Privacy Policy</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Delivery and Return</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h5 class="mb-3">Customer Support</h5>
+                    <ul class="list-unstyled mb-0 lh-lg">
+                        <li><a href="#" class="text-decoration-none text-secondary">Contact</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Help</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-4 border-top border-dark">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between align-items-center">
+                    <div class="author">
+                        <span class="footer-text">Designed and Developed by: <span class="fw-bold d-block">Aleksandar S.
+                                Perošević</span></span>
+                    </div>
+                    <div class="social-media">
+                        <img src="images/facebook.png" alt="facebook">
+                        <img src="images/instagram.png" alt="instagram">
+                        <img src="images/tik-tok.png" alt="tiktok">
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/product-page.js"></script>
+</body>
+
+</html>

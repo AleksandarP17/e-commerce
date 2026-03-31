@@ -1,0 +1,89 @@
+
+/* CONTENT */
+
+:root {
+    --bs-primary: #171414;
+    --bs-primary-rgb: 23, 20, 20;
+
+    --bs-secondary: #BDBBBA;
+    --bs-secondary-rgb: 189, 187, 186;
+
+}
+
+.btn-primary {
+    background-color: #171414;
+    border-color: #171414;
+}
+
+.btn-primary:hover {
+    background-color: #2A2626;
+    border-color: #2A2626;
+}
+
+.text-inverse {
+    color: #F4F4F4;
+}
+
+.text-danger {
+    color: #FE2928 !important;
+}
+
+body {
+    background-color: #FAF8F8;
+    font-family: Quicksand, sans-serif;
+}
+
+img.logo {
+    width: 50px;
+}
+
+.navbar {
+    background-color: #FCF1E9;
+    border-bottom: 1px solid #BDBBBA;
+    padding: 10px;
+}
+
+img.img {
+    width: 32px;
+    height: 32px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.page-title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.form-card {
+    border: 1px solid #BDBBBA;
+    border-radius: 8px;
+    padding: 1rem 1rem 32px;
+}
+
+.social-media {
+    text-align: end;
+}
+
+.social-media img {
+    width: 24px;
+    height: auto;
+}
+
+.author span {
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+footer .row {
+    column-gap: 5rem;
+}
+
+.accordion-button,
+.accordion-body {
+    background-color: #FAF8F8;
+}
